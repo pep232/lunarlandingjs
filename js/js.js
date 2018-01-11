@@ -92,6 +92,3 @@ function actualizarFuel(){
 	if (c < 0 ) c = 0;
 	combustible.innerHTML=c;	
 }
-function myFunction() {
-    document.getElementById("jugar").reset();
-}
