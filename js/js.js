@@ -1,7 +1,7 @@
 
 //ENTORNO
 var g = 1.622;
-var dt = 0.016683;
+var dt = 0.167;
 var timer=null;
 var timerFuel=null;
 //NAVE
