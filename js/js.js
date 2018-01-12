@@ -75,6 +75,13 @@ function moverNave(){
 	}
 }
 function motorOn(){
+	function cambiar () {
+  document.getElementById('nave').src = "navelunarfuego.png";
+ }
+ 
+ function volver () {
+  document.getElementById('nave').src = "navelunar.png";
+ }
 	//el motor da aceleración a la nave
 	a=-g;
 	//mientras el motor esté activado gasta combustible
