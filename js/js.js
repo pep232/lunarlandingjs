@@ -68,9 +68,9 @@ function moverNave(){
 	if (y<72){ 
 		document.getElementById("nave").style.top = y+"%"; 
 	} else { 
-		stop(); alert("felicidades, has aterrizado.");
+		stop();
 	}
-
+	if (y<72){ combustible.innerHTML=c;}
 }
 function motorOn(){
 	//el motor da aceleración a la nave
