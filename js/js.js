@@ -63,14 +63,13 @@ function moverNave(){
 	//actualizar marcadores
 	velocidad.innerHTML=v;
 	altura.innerHTML=y;
-	
+	combustible.innerHTML=c;
 	//mover hasta que top sea un 72% de la pantalla
 	if (y<72){ 
 		document.getElementById("nave").style.top = y+"%"; 
 	} else { 
 		stop();
 	}
-	if (y<72){ combustible.innerHTML=c;}
 }
 function motorOn(){
 	//el motor da aceleración a la nave
