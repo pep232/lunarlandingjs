@@ -1,7 +1,7 @@
 
 //ENTORNO
 var g = 1.622;
-var dt = 0.167;
+var dt = 0.016683;
 var timer=null;
 var timerFuel=null;
 //NAVE
@@ -76,11 +76,11 @@ function moverNave(){
 }
 function motorOn(){
 	function cambiar () {
-  document.getElementById('nave').src = "navelunarfuego.png";
+  document.getElementById('nave').src = "./img/navelunarfuego.png";
  }
  
  function volver () {
-  document.getElementById('nave').src = "navelunar.png";
+  document.getElementById('nave').src = "./navelunar.png";
  }
 	//el motor da aceleración a la nave
 	a=-g;
