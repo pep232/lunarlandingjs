@@ -75,24 +75,24 @@ function moverNave(){
 	}
 }
 function motorOn(){
-	function cambiar () {
-  document.getElementById('nave').src = "./img/navelunarfuego.png";
- }
- 
- function volver () {
-  document.getElementById('nave').src = "./navelunar.png";
- }
 	//el motor da aceleración a la nave
 	a=-g;
 	//mientras el motor esté activado gasta combustible
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
 }
+function cambiar () {
+  document.getElementById('nave').src = "./img/navelunarfuego.png";
+ }
+ 
 function motorOff(){
 	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
 }
+ function volver () {
+  document.getElementById('nave').src = "./navelunar.png";
+ }
 function actualizarFuel(){
 	//Restamos combustible hasta que se agota
 	c-=0.1;
