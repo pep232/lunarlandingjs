@@ -68,7 +68,7 @@ function moverNave(){
 	if (y<72){ 
 		document.getElementById("nave").style.top = y+"%"; 
 	} else { 
-		stop();
+		stop(); alert("felicidades, has aterrizado.");
 	}
 
 }
