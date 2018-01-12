@@ -94,10 +94,3 @@ function actualizarFuel(){
 	if (c < 0 ) c = 0;
 	combustible.innerHTML=c;	
 }
-
-function changeImg(){
-	if (imagen.src == "./img/navelunarfuego.png") {
-            imagen.src = "./img/navelunar.png";
-        } else {
-            imagen.src = "./img/navelunarfuego.png";
-        }
