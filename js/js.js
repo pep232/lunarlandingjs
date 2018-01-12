@@ -67,8 +67,8 @@ function moverNave(){
 	velocidad.innerHTML=v;
 	altura.innerHTML=y;
 	
-	//mover hasta que top sea un 70% de la pantalla
-	if (y<80){ 
+	//mover hasta que top sea un 72% de la pantalla
+	if (y<72){ 
 		document.getElementById("nave").style.top = y+"%"; 
 	} else { 
 		stop();
