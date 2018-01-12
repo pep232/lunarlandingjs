@@ -81,21 +81,23 @@ function motorOn(){
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
 }
-function cambiar () {
-  document.getElementById('nave').src = "./img/navelunarfuego.png";
- }
  
 function motorOff(){
 	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
 }
- function volver () {
-  document.getElementById('nave').src = "./navelunar.png";
- }
+
 function actualizarFuel(){
 	//Restamos combustible hasta que se agota
 	c-=0.1;
 	if (c < 0 ) c = 0;
 	combustible.innerHTML=c;	
 }
+
+function changeImg(){
+	if (imagen.src == "navelunarfuego.png") {
+            imagen.src = "navelunar.png";
+        } else {
+            imagen.src = "navelunarfuego.png";
+        }
