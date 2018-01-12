@@ -96,8 +96,8 @@ function actualizarFuel(){
 }
 
 function changeImg(){
-	if (imagen.src == "navelunarfuego.png") {
-            imagen.src = "navelunar.png";
+	if (imagen.src == "./img/navelunarfuego.png") {
+            imagen.src = "./img/navelunar.png";
         } else {
-            imagen.src = "navelunarfuego.png";
+            imagen.src = "./img/navelunarfuego.png";
         }
