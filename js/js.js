@@ -52,7 +52,7 @@ window.onload = function(){
 //Definición de funciones
 function start(){
 	//cada intervalo de tiempo mueve la nave
-	timer=setInterval(function(){ moverNave(); }, dt*100);
+	timer=setInterval(function(){ moverNave(); }, dt*1000);
 }
 
 function stop(){
@@ -67,8 +67,8 @@ function moverNave(){
 	velocidad.innerHTML=v;
 	altura.innerHTML=y;
 	
-	//mover hasta que top sea un 72% de la pantalla
-	if (y<72){ 
+	//mover hasta que top sea un 70% de la pantalla
+	if (y<70){ 
 		document.getElementById("nave").style.top = y+"%"; 
 	} else { 
 		stop();
